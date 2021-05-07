@@ -7,28 +7,23 @@
     <!--    <link rel="stylesheet" href="css/styles.css">-->
 </head>
 <body>
+<header role="banner">
+    <h1>Van Gogh et ses œuvres pleines de Naturalisme.</h1>
+    <picture>
+        <source srcset="images/princiaple_600.jpg" media="(max-width:600px)"> <!-- écran étroit -->
+        <source srcset="images/principale_540.jpg" media="(min-width:601px)"> <!-- écran large -->
+        <img src="images/principale_540.jpg" alt="">
+    </picture>
+</header>
 <main class="conteneur">
-
-    <div class="conteneur cards__principale">
-        <div class="cards__div cards__principale_a">
-            <h1>Van Gogh et ses œuvres pleines de Naturalisme.</h1>
-        </div>
-        <div class="cards__div cards__principale_b">
-            <picture>
-                <source srcset="images/princiaple_600.jpg" media="(max-width:600px)"> <!-- écran étroit -->
-                <source srcset="images/principale_540.jpg" media="(min-width:601px)"> <!-- écran large -->
-                <img src="images/principale_540.jpg" alt="">
-            </picture>
-        </div>
-        <div clas="cards__div cards__principale_c">
+    <section class="intro">
             <p>Né aux Pays-Bas, Van Gogh arrive à Paris en 1886. Son frère Theo gère une galerie de peinture à Montmartre. C'est par l'intermédiaire de Theo que Vincent rencontre la plupart des peintres impressionnistes qui, à cette date, avaient réussi à s'imposer. Van Gogh est un artiste qui brûle les étapes comme s'il avait la prémonition que sa vie serait courte. A Paris, sa peinture se transforme radicalement : la couleur et la lumière prennent une place essentielle. Mais il veut découvrir la lumière méditerranéenne et, en 1888, il s'installe à Arles. Gauguin le rejoint, mais l'instabilité mentale de Van Gogh le fera rapidement fuir. Les paysages provençaux conduiront Van Gogh à accentuer encore sa liberté chromatique et à composer à Arles et Saint-Rémy certains de ses grands chefs-d'œuvre.</p>
-        </div>
-    </div>
+    </section>
 
     <div class="conteneur cards">
         <div class="cards__div cards_a">
             <picture>
-                <source srcset="images/terasse_600.jpg" media="(max-width:600px)"> <!-- écran étroit -->
+                <source srcset="images/terrasse_600.jpg" media="(max-width:600px)"> <!-- écran étroit -->
                 <source srcset="images/terasse_317.jpg" media="(min-width:601px)"> <!-- écran large -->
                 <img src="images/terasse_317.jpg" alt="peinture de van gogh représentant des térasses de café le soir">
             </picture>
@@ -65,5 +60,13 @@
         </div>
     </div>
 </main>
+<footer role="contentinfo">
+    <p>TIM Actu <br>Design digital des actualités culturelles</p>
+    <p>Sources:<br>
+        https://www.cineclubdecaen.com/peinture/peintres/vangogh/nuiteetoilee1888.htm
+        https://fr.wikipedia.org/wiki/Terrasse_du_caf%C3%A9_le_soir
+        https://fr.wikipedia.org/wiki/Les_Tournesols#/media/Fichier:Vincent_Willem_van_Gogh_128.jpg
+        https://www.kazoart.com/blog/loeuvre-loupe-nuit-etoilee-van-gogh/ </p>
+</footer>
 </body>
 </html>
