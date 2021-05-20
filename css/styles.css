@@ -1,0 +1,179 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+/**
+ * @author Louna Parron 2032594@csfoy.ca
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Mise en page
+ *** Contenus principal et complémentaire
+ *** Architecture des CSS (liste de définitions)
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(_normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(_utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(_typo.css);
+
+/* Grille
+   ========================================================================== */
+@import url(grille.css);
+
+
+/* Mise en page
+   ========================================================================== */
+
+body {
+
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+        grid-template-areas:
+                "a b b"
+                "a c d"
+                "a c d"
+                "a e e"
+    }
+
+
+    .cards_a {
+        grid-area: a;
+    }
+
+    .cards_b {
+        grid-area: b;
+    }
+
+    .cards_c {
+        grid-area: c;
+    }
+
+    .cards_d {
+        grid-area: d;
+    }
+
+    .cards_e {
+        grid-area: e;
+    }
+}
+
+@media (min-width: 600px){
+    .cards_a {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1
+    }
+    .cards_b {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3
+    }
+    .cards_c {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 3
+    }
+    .cards_d {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 5
+    }
+    .cards_e {
+        -ms-grid-row: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3
+    }
+}
+
+
+/*** Contenus principal et complémentaire ***/
+img,
+.intro {
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.intro {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+blockquote {
+    color: #1F3FBC
+}
+
+/* header */
+.bandeau {
+    margin-top: 30px;
+}
+
+@media (min-width: 600px) {
+    .bandeau {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+h1 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+/*** Architecture des CSS ***/
+
+
+/*** Pied de page ***/
+footer {
+    margin-top: 50px;
+    background-color: #ffff63;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+ul {
+    word-wrap: break-word;
+}
